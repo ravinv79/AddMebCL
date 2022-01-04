@@ -12,10 +12,10 @@ public class Excel
 	{		
 		try 
 		{
-			FileInputStream fis = new FileInputStream(xlPath);
-			Workbook wb = WorkbookFactory.create(fis);
-			Sheet s = wb.getSheet(sheetName);
-			String v = s.getRow(rowNum).getCell(cellNum).getStringCellValue();
+			 FileInputStream fis = new FileInputStream(xlPath);
+			 Workbook wb = WorkbookFactory.create(fis);
+			 Sheet s = wb.getSheet(sheetName);
+			 String v = s.getRow(rowNum).getCell(cellNum).getStringCellValue();
 			
 			return v;
 		}
