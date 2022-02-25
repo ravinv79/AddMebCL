@@ -32,7 +32,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/DCLatest/Jarfiles/extentreports-2.41.2.jar"/>
 	<classpathentry kind="lib" path="lib/freemarker-2.3.23.jar"/>
 	<classpathentry kind="lib" path="lib/cglib-nodep-3.2.4.jar"/>
 	<classpathentry kind="lib" path="lib/commons-codec-1.10.jar"/>
@@ -43,8 +42,6 @@
 	<classpathentry kind="lib" path="lib/commons-logging-1.1.3.jar"/>
 	<classpathentry kind="lib" path="lib/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="lib/cssparser-0.9.20.jar"/>
-	<classpathentry kind="lib" path="lib/gson-2.3.1.jar"/>
-	<classpathentry kind="lib" path="lib/guava-19.0.jar"/>
 	<classpathentry kind="lib" path="lib/hamcrest-core-1.3.jar"/>
 	<classpathentry kind="lib" path="lib/hamcrest-library-1.3.jar"/>
 	<classpathentry kind="lib" path="lib/htmlunit-2.23.jar"/>
@@ -72,5 +69,6 @@
 	<classpathentry kind="lib" path="lib/selenium-ie-driver-3.14.0.jar"/>
 	<classpathentry kind="lib" path="lib/selenium-ie-driver-4.0.0-alpha-1.jar"/>
 	<classpathentry kind="src" path="/DCLatest"/>
+	<classpathentry kind="lib" path="/DCLatest/Jarfiles/extentreports-2.41.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

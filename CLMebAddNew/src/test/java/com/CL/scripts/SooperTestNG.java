@@ -37,10 +37,10 @@ public class SooperTestNG
 	@BeforeClass
 	public void precondition()
 	{				
-		String xlPath = "C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Excelfiles\\Config.xlsx";
-		String sheetName = "Sheet1";
-		String browser = Excel.getCellData(xlPath, sheetName, 0, 1);
-		String url = Excel.getCellData(xlPath, sheetName, 1, 1);
+		 String xlPath = "C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Excelfiles\\Config.xlsx";
+		 String sheetName = "Sheet1";
+		 String browser = Excel.getCellData(xlPath, sheetName, 0, 1);
+		 String url = Excel.getCellData(xlPath, sheetName, 1, 1);
 		if (browser.equals("Chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\exefiles\\chromedriver.exe");
