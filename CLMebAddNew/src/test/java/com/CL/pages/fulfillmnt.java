@@ -23,7 +23,7 @@ public class fulfillmnt
 	@FindBy(id="lnkSubmit")
 	private WebElement lnkSubmit;
 	
-	public fulfllmnt(WebDriver driver)
+	public fulfillmnt(WebDriver driver)
 	{
 		super();
 		PageFactory.initElements(driver, this);
