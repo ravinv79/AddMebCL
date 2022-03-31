@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="222858" started-at="2022-01-04T16:21:05Z" finished-at="2022-01-04T16:24:48Z">
+  <suite name="Default suite" duration-ms="278830" started-at="2022-03-31T08:18:24Z" finished-at="2022-03-31T08:23:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="222858" started-at="2022-01-04T16:21:05Z" finished-at="2022-01-04T16:24:48Z">
+    <test name="Default test" duration-ms="278830" started-at="2022-03-31T08:18:24Z" finished-at="2022-03-31T08:23:03Z">
       <class name="com.CL.scripts.Carelynxmeb">
-        <test-method status="PASS" signature="startreport()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="startreport" is-config="true" duration-ms="240" started-at="2022-01-04T21:51:05Z" finished-at="2022-01-04T21:51:06Z">
+        <test-method status="PASS" signature="startreport()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="startreport" is-config="true" duration-ms="234" started-at="2022-03-31T13:48:24Z" finished-at="2022-03-31T13:48:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startreport -->
-        <test-method status="PASS" signature="precondition()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="precondition" is-config="true" duration-ms="4736" started-at="2022-01-04T21:51:06Z" finished-at="2022-01-04T21:51:10Z">
+        <test-method status="PASS" signature="precondition()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="precondition" is-config="true" duration-ms="4656" started-at="2022-03-31T13:48:24Z" finished-at="2022-03-31T13:48:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="testcarelynxmeb()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="testcarelynxmeb" duration-ms="217655" started-at="2022-01-04T21:51:10Z" finished-at="2022-01-04T21:54:48Z">
+        <test-method status="PASS" signature="testcarelynxmeb()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="testcarelynxmeb" duration-ms="273705" started-at="2022-03-31T13:48:29Z" finished-at="2022-03-31T13:53:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcarelynxmeb -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="getResult" is-config="true" duration-ms="1" started-at="2022-01-04T21:54:48Z" finished-at="2022-01-04T21:54:48Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="getResult" is-config="true" duration-ms="0" started-at="2022-03-31T13:53:03Z" finished-at="2022-03-31T13:53:03Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="endReport" is-config="true" duration-ms="215" started-at="2022-01-04T21:54:48Z" finished-at="2022-01-04T21:54:48Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="endReport" is-config="true" duration-ms="219" started-at="2022-03-31T13:53:03Z" finished-at="2022-03-31T13:53:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

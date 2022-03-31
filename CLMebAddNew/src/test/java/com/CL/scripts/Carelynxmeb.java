@@ -18,6 +18,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -61,7 +62,7 @@ public class Carelynxmeb extends SooperTestNG
 			if(driver.findElements(By.linkText("Members")).size()!=0)
 			{
 				test.log(LogStatus.PASS, "Home Page displayed successfully");
-				super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\HomepagePASS.png");
+				super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots\\", "HomepagePASS.png");
 				shnew.getRow(1).getCell(3).setCellValue("Home Page should get display");
 				shnew.getRow(1).getCell(4).setCellValue("P");
 				WebElement moveelement = driver.findElement(By.linkText("Members"));
@@ -113,7 +114,7 @@ public class Carelynxmeb extends SooperTestNG
 				if(MebRegsucess.contains("Member details updated successfully."))			
 				{
 					test.log(LogStatus.PASS, MebRegsucess);
-					super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\MemberUpdatePASS.png");	
+					super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "MemberUpdatePASS.png");	
 					shnew.getRow(3).getCell(3).setCellValue("Member should get create with success message like Member details updated successfully.");
 					shnew.getRow(3).getCell(4).setCellValue("P");
 				}
@@ -142,14 +143,14 @@ public class Carelynxmeb extends SooperTestNG
 					if(MebRegsucess.contains("Member details updated successfully."))			
 					{
 						test.log(LogStatus.PASS, MebRegsucess);
-						super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\MemberUpdatePASS.png");	
+						super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "MemberUpdatePASS.png");	
 						shnew.getRow(3).getCell(3).setCellValue("Member should get create and success message should get display like Member details updated successfully.");
 						shnew.getRow(3).getCell(4).setCellValue("P");
 					}
 					else
 					{
 						test.log(LogStatus.FAIL, MebRegsucess);
-						super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\MemberUpdateFAIL.png");	
+						super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots","MemberUpdateFAIL.png");	
 						shnew.getRow(3).getCell(3).setCellValue("Member should get create and success message should get display like Member details updated successfully.");
 						shnew.getRow(3).getCell(4).setCellValue("O");
 					}
@@ -158,7 +159,7 @@ public class Carelynxmeb extends SooperTestNG
 				shnew.getRow(4).getCell(2).setCellValue("1. Click on Group Agent tab");			
 				driver.findElement(By.linkText("Group / Agent")).click();		
 				Thread.sleep(7000);
-				super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\GroupsCREEN1.png");
+				super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "GroupsCREEN1.png");
 				shnew.getRow(4).getCell(3).setCellValue("Group Agent screen should get display successfully");
 				shnew.getRow(4).getCell(4).setCellValue("P");
 				String GrpCode = sheet.getRow(1).getCell(15).getStringCellValue();
@@ -177,7 +178,7 @@ public class Carelynxmeb extends SooperTestNG
 					driver.switchTo().window(str);				
 				}
 				Thread.sleep(5000);
-				super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\GroupsCREEN2.png");
+				super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "GroupsCREEN2.png");
 				driver.findElement(By.id("dgdSrchAgntStrctr_ctl03_lnkSelect")).click();
 						
 				driver.switchTo().window(getOldWindow);
@@ -189,21 +190,21 @@ public class Carelynxmeb extends SooperTestNG
 				if(GrpUpdateMsg.contains("Record updated successfully"))
 				{
 					test.log(LogStatus.PASS, GrpUpdateMsg);
-					super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\GroupUpdatePASS.png");	
+					super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "GroupUpdatePASS.png");	
 					shnew.getRow(5).getCell(3).setCellValue("Group details should get update with success message like Record updated successfully");
 					shnew.getRow(5).getCell(4).setCellValue("P");
 				}
 				else
 				{
 					test.log(LogStatus.FAIL, GrpUpdateMsg);
-					super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\GroupUpdateFAIL.png");	
+					super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "GroupUpdateFAIL.png");	
 					shnew.getRow(5).getCell(3).setCellValue("Group details should get update with success message like Record updated successfully");
 					shnew.getRow(5).getCell(4).setCellValue("O");
 				}		
 				
 				driver.findElement(By.linkText("Payment")).click();
 				Thread.sleep(7000);
-				super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\PaymentScreen1.png");
+				super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "PaymentScreen1.png");
 				driver.findElement(By.id("chkDisclaimer")).click();
 				Thread.sleep(10000);
 				newWindow=driver.getWindowHandles();					
@@ -217,7 +218,7 @@ public class Carelynxmeb extends SooperTestNG
 				        driver.switchTo().window(popupHandle);	
 				        driver.findElement(By.xpath("/html/body/form/table/tbody/tr[2]/td/input")).click();
 				        //driver.close();
-				        super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\PaymentAcceptance.png");
+				        super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "PaymentAcceptance.png");
 				        driver.switchTo().window(getOldWindow);
 				    }
 				}	
@@ -246,14 +247,14 @@ public class Carelynxmeb extends SooperTestNG
 				if(PaymentSuccMsg.contains("Record updated successfully"))
 				{
 					test.log(LogStatus.PASS, PaymentSuccMsg);
-					super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\PaymentPASS.png");	
+					super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "PaymentPASS.png");	
 					shnew.getRow(5).getCell(3).setCellValue("Payment details should get update with success message like Record updated successfully");
 					shnew.getRow(5).getCell(4).setCellValue("P");
 				}
 				else
 				{
 					test.log(LogStatus.FAIL, PaymentSuccMsg);
-					super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\PaymentFAIL.png");	
+					super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "PaymentFAIL.png");	
 					shnew.getRow(5).getCell(3).setCellValue("Payment details should get update with success message like Record updated successfully");
 					shnew.getRow(5).getCell(4).setCellValue("O");
 				}
@@ -263,7 +264,7 @@ public class Carelynxmeb extends SooperTestNG
 			{
 				shnew.getRow(1).getCell(3).setCellValue("Home Page should get display");
 				test.log(LogStatus.FAIL, "Home Page not displayed successfully");
-				super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\HomepageFAIL.png");
+				super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "HomepageFAIL.png");
 				shnew.getRow(1).getCell(4).setCellValue("O");				
 			}	
 				
@@ -279,23 +280,50 @@ public class Carelynxmeb extends SooperTestNG
 			if(ApprovalMsg.contains("Record updated successfully"))
 			{
 				test.log(LogStatus.PASS, ApprovalMsg);
-				super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\ApprovalPASS.png");	
+				super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "ApprovalPASS.png");	
 				shnew.getRow(7).getCell(3).setCellValue("Member status should get update to Active from Prospect");
 				shnew.getRow(7).getCell(4).setCellValue("P");
 			}
 			else
 			{
 				test.log(LogStatus.FAIL, ApprovalMsg);
-				super.passfail("E:\\Enrollment\\DCLatest\\TestReport\\ApprovalFAIL.png");	
+				super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "ApprovalFAIL.png");	
 				shnew.getRow(7).getCell(3).setCellValue("Member status should get update to Active from Prospect");
 				shnew.getRow(7).getCell(4).setCellValue("O");
 			}
+			
 			driver.findElement(By.linkText("Approval")).click();
 			Thread.sleep(5000);
 			String MbrId = driver.findElement(By.id("MbrHdr_lblMemberId")).getText();
 			
 			test.log(LogStatus.INFO, "Member ID - "+MbrId);
+			
+			driver.findElement(By.linkText("Payment")).click();
 			Thread.sleep(5000);
+			driver.findElement(By.linkText("Post Payment")).click();
+			Thread.sleep(10000);
+			getOldWindow = driver.getWindowHandle();
+			Set<String> newWindow = driver.getWindowHandles();
+			for(String str:newWindow)
+			{
+				driver.switchTo().window(str);				
+			}
+			Thread.sleep(10000);
+			WebElement pReason = driver.findElement(By.id("cboMbrPaymRsn"));
+			
+			Select selPaymentReason = new Select(pReason);
+			selPaymentReason.selectByVisibleText("REGULAR PAYMENT");
+			Thread.sleep(5000);
+			driver.findElement(By.linkText("Process Payment")).click();
+			Thread.sleep(5000);
+			//super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "PostPaymentScreen1.png");
+			driver.switchTo().alert().accept();
+			Thread.sleep(5000);		
+			driver.switchTo().alert().accept();
+			Thread.sleep(5000);			
+			driver.close();
+			driver.switchTo().window(getOldWindow);
+			
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			System.out.println("Driver Loaded");			
 			 			 
@@ -316,7 +344,8 @@ public class Carelynxmeb extends SooperTestNG
 				test.log(LogStatus.INFO, "Date of Birth - "+Dob);	
 				String CvgStDt = rs.getString("CvgStartDt");	
 				System.out.println("Coverage Start Date - "+CvgStDt);
-				test.log(LogStatus.INFO, "Coverage Start Date - "+CvgStDt);						
+				test.log(LogStatus.INFO, "Coverage Start Date - "+CvgStDt);		
+				super.passfail("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Screenshots", "Database.png");
 			}	
 			
 			extent.endTest(test);

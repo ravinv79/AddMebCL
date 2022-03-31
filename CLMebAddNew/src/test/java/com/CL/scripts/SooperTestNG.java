@@ -1,6 +1,7 @@
 package com.CL.scripts;
 
 import java.io.File;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -62,10 +63,12 @@ public class SooperTestNG
 		driver.manage().window().maximize();
 	}
 	
-	protected void passfail(String screenshotpath) 
+	protected void passfail(String path, String fileName) 
 	{
 		try
 		{
+			String dateTime=new Date().toString().replace(":", "_");
+			String screenshotpath=path+fileName+dateTime+".png";
 			File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(scrFile, new File(screenshotpath));
 			test.log(LogStatus.INFO, "Snapshot below: " + test.addScreenCapture(screenshotpath));
