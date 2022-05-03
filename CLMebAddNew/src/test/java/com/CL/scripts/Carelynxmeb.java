@@ -22,6 +22,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.CL.pages.LoginPage;
 import com.relevantcodes.extentreports.LogStatus;
 
 import pages.Addmember;
@@ -46,17 +47,17 @@ public class Carelynxmeb extends SooperTestNG
 			FileInputStream fis = new FileInputStream("C:\\Users\\raviv\\git\\AddMebCL\\CLMebAddNew\\Excelfiles\\CreateMember.xlsx"); 
 			Workbook workbook = WorkbookFactory.create(fis);
 			Sheet sheet = workbook.getSheet("MemberRegistration");
+			Sheet sheet1 = workbook.getSheet("LoginPage");
 			FileInputStream fisnew = new FileInputStream(file);			
 			XSSFWorkbook wbnew = new XSSFWorkbook(fisnew);
 			XSSFSheet shnew = wbnew.getSheet("CreateMember");	
 			Addmember cMember = new Addmember(driver);
 			String getOldWindow=driver.getWindowHandle();
 			shnew.getRow(1).getCell(2).setCellValue("Login with valid Username and Password");
-			driver.findElement(By.id("TxtUserName")).sendKeys("itqaops");	
-			Thread.sleep(2000);	
-			driver.findElement(By.id("TxtPassword")).sendKeys("");
-			Thread.sleep(2000);			
-			driver.findElement(By.id("btnLogin")).click();
+			LoginPage LP = new LoginPage(driver);
+			String UserName = sheet1.getRow(1).getCell(0).getStringCellValue();
+			String Password = sheet1.getRow(1).getCell(1).getStringCellValue();
+			LP.UN(UserName, Password);
 			Thread.sleep(10000);
 			
 			if(driver.findElements(By.linkText("Members")).size()!=0)

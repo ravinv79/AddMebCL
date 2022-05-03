@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="278830" started-at="2022-03-31T08:18:24Z" finished-at="2022-03-31T08:23:03Z">
+  <suite name="Default suite" duration-ms="12055" started-at="2022-04-22T17:00:16Z" finished-at="2022-04-22T17:00:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="278830" started-at="2022-03-31T08:18:24Z" finished-at="2022-03-31T08:23:03Z">
-      <class name="com.CL.scripts.Carelynxmeb">
-        <test-method status="PASS" signature="startreport()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="startreport" is-config="true" duration-ms="234" started-at="2022-03-31T13:48:24Z" finished-at="2022-03-31T13:48:24Z">
+    <test name="Default test" duration-ms="12055" started-at="2022-04-22T17:00:16Z" finished-at="2022-04-22T17:00:28Z">
+      <class name="com.CL.scripts.CancelMember">
+        <test-method status="PASS" signature="startreport()[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829]" name="startreport" is-config="true" duration-ms="239" started-at="2022-04-22T22:30:16Z" finished-at="2022-04-22T22:30:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startreport -->
-        <test-method status="PASS" signature="precondition()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="precondition" is-config="true" duration-ms="4656" started-at="2022-03-31T13:48:24Z" finished-at="2022-03-31T13:48:29Z">
+        <test-method status="PASS" signature="precondition()[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829]" name="precondition" is-config="true" duration-ms="5242" started-at="2022-04-22T22:30:16Z" finished-at="2022-04-22T22:30:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="testcarelynxmeb()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="testcarelynxmeb" duration-ms="273705" started-at="2022-03-31T13:48:29Z" finished-at="2022-03-31T13:53:03Z">
+        <test-method status="PASS" signature="testMmbercancel()[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829]" name="testMmbercancel" duration-ms="6282" started-at="2022-04-22T22:30:21Z" finished-at="2022-04-22T22:30:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcarelynxmeb -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="getResult" is-config="true" duration-ms="0" started-at="2022-03-31T13:53:03Z" finished-at="2022-03-31T13:53:03Z">
+        </test-method> <!-- testMmbercancel -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829]" name="getResult" is-config="true" duration-ms="5" started-at="2022-04-22T22:30:28Z" finished-at="2022-04-22T22:30:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testcarelynxmeb status=SUCCESS method=Carelynxmeb.testcarelynxmeb()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829] output={null}]]]>
+                <![CDATA[[TestResult name=testMmbercancel status=SUCCESS method=CancelMember.testMmbercancel()[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.CL.scripts.Carelynxmeb@5ae9a829]" name="endReport" is-config="true" duration-ms="219" started-at="2022-03-31T13:53:03Z" finished-at="2022-03-31T13:53:03Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829]" name="endReport" is-config="true" duration-ms="275" started-at="2022-04-22T22:30:28Z" finished-at="2022-04-22T22:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.CL.scripts.Carelynxmeb -->
+      </class> <!-- com.CL.scripts.CancelMember -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
