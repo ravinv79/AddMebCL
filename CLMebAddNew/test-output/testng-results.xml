@@ -1,40 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12055" started-at="2022-04-22T17:00:16Z" finished-at="2022-04-22T17:00:28Z">
+  <suite name="Suite" duration-ms="1592805" started-at="2022-06-29T17:01:36Z" finished-at="2022-06-29T17:28:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12055" started-at="2022-04-22T17:00:16Z" finished-at="2022-04-22T17:00:28Z">
-      <class name="com.CL.scripts.CancelMember">
-        <test-method status="PASS" signature="startreport()[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829]" name="startreport" is-config="true" duration-ms="239" started-at="2022-04-22T22:30:16Z" finished-at="2022-04-22T22:30:16Z">
+    <test name="Test" duration-ms="1592805" started-at="2022-06-29T17:01:36Z" finished-at="2022-06-29T17:28:09Z">
+      <class name="com.CL.scripts.CLSmokeTest">
+        <test-method status="PASS" signature="startreport()[pri:0, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="startreport" is-config="true" duration-ms="262" started-at="2022-06-29T22:31:36Z" finished-at="2022-06-29T22:31:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startreport -->
-        <test-method status="PASS" signature="precondition()[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829]" name="precondition" is-config="true" duration-ms="5242" started-at="2022-04-22T22:30:16Z" finished-at="2022-04-22T22:30:21Z">
+        <test-method status="PASS" signature="precondition()[pri:0, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="precondition" is-config="true" duration-ms="6171" started-at="2022-06-29T22:31:36Z" finished-at="2022-06-29T22:31:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="testMmbercancel()[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829]" name="testMmbercancel" duration-ms="6282" started-at="2022-04-22T22:30:21Z" finished-at="2022-04-22T22:30:28Z">
+        <test-method status="PASS" signature="testCreateMember()[pri:1, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="testCreateMember" duration-ms="297626" started-at="2022-06-29T22:31:42Z" finished-at="2022-06-29T22:36:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMmbercancel -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829]" name="getResult" is-config="true" duration-ms="5" started-at="2022-04-22T22:30:28Z" finished-at="2022-04-22T22:30:28Z">
+        </test-method> <!-- testCreateMember -->
+        <test-method status="PASS" signature="testAddDep()[pri:2, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="testAddDep" duration-ms="30906" started-at="2022-06-29T22:36:40Z" finished-at="2022-06-29T22:37:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddDep -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="getResult" is-config="true" duration-ms="0" started-at="2022-06-29T22:36:40Z" finished-at="2022-06-29T22:36:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMmbercancel status=SUCCESS method=CancelMember.testMmbercancel()[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829] output={null}]]]>
+                <![CDATA[[TestResult name=testCreateMember status=SUCCESS method=CLSmokeTest.testCreateMember()[pri:1, instance:com.CL.scripts.CLSmokeTest@6d8a00e3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.CL.scripts.CancelMember@5ae9a829]" name="endReport" is-config="true" duration-ms="275" started-at="2022-04-22T22:30:28Z" finished-at="2022-04-22T22:30:28Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="getResult" is-config="true" duration-ms="0" started-at="2022-06-29T22:37:11Z" finished-at="2022-06-29T22:37:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddDep status=SUCCESS method=CLSmokeTest.testAddDep()[pri:2, instance:com.CL.scripts.CLSmokeTest@6d8a00e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testUpdatemember()[pri:3, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="testUpdatemember" duration-ms="27594" started-at="2022-06-29T22:37:11Z" finished-at="2022-06-29T22:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdatemember -->
+        <test-method status="PASS" signature="testupdatedep()[pri:4, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="testupdatedep" duration-ms="56657" started-at="2022-06-29T22:37:38Z" finished-at="2022-06-29T22:38:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testupdatedep -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="getResult" is-config="true" duration-ms="0" started-at="2022-06-29T22:37:38Z" finished-at="2022-06-29T22:37:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUpdatemember status=SUCCESS method=CLSmokeTest.testUpdatemember()[pri:3, instance:com.CL.scripts.CLSmokeTest@6d8a00e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testManualLetter()[pri:5, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="testManualLetter" duration-ms="956003" started-at="2022-06-29T22:38:35Z" finished-at="2022-06-29T22:54:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testManualLetter -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="getResult" is-config="true" duration-ms="0" started-at="2022-06-29T22:38:35Z" finished-at="2022-06-29T22:38:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testupdatedep status=SUCCESS method=CLSmokeTest.testupdatedep()[pri:4, instance:com.CL.scripts.CLSmokeTest@6d8a00e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="getResult" is-config="true" duration-ms="2" started-at="2022-06-29T22:54:31Z" finished-at="2022-06-29T22:54:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testManualLetter status=SUCCESS method=CLSmokeTest.testManualLetter()[pri:5, instance:com.CL.scripts.CLSmokeTest@6d8a00e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testMmbercancel()[pri:6, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="testMmbercancel" duration-ms="82529" started-at="2022-06-29T22:54:31Z" finished-at="2022-06-29T22:55:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMmbercancel -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="getResult" is-config="true" duration-ms="0" started-at="2022-06-29T22:55:53Z" finished-at="2022-06-29T22:55:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMmbercancel status=SUCCESS method=CLSmokeTest.testMmbercancel()[pri:6, instance:com.CL.scripts.CLSmokeTest@6d8a00e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testActivateMeb()[pri:7, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="testActivateMeb" duration-ms="62793" started-at="2022-06-29T22:55:53Z" finished-at="2022-06-29T22:56:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testActivateMeb -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="getResult" is-config="true" duration-ms="0" started-at="2022-06-29T22:56:56Z" finished-at="2022-06-29T22:56:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testActivateMeb status=SUCCESS method=CLSmokeTest.testActivateMeb()[pri:7, instance:com.CL.scripts.CLSmokeTest@6d8a00e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="testfulfillment()[pri:8, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="testfulfillment" duration-ms="71852" started-at="2022-06-29T22:56:56Z" finished-at="2022-06-29T22:58:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfulfillment -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="endReport" is-config="true" duration-ms="401" started-at="2022-06-29T22:58:08Z" finished-at="2022-06-29T22:58:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- com.CL.scripts.CancelMember -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.CL.scripts.CLSmokeTest@6d8a00e3]" name="getResult" is-config="true" duration-ms="0" started-at="2022-06-29T22:58:08Z" finished-at="2022-06-29T22:58:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testfulfillment status=SUCCESS method=CLSmokeTest.testfulfillment()[pri:8, instance:com.CL.scripts.CLSmokeTest@6d8a00e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.CL.scripts.CLSmokeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
